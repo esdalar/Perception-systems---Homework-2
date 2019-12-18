@@ -2,6 +2,8 @@
 
 ## Exercise 2.1.Calibrate the intrinsics parameters of your webcam.
 
+First of all, fork and clone the following repository:https://github.com/beta-robots/usb_cam_calibration
+
 1- Install the following packages to be able to calibrate the camera:
 
 ```sh
