@@ -81,3 +81,11 @@ $ roslaunch usb_cam_calibration usb_camera_calibrated.launch video_device:="/dev
 ```
 
 ## Exercise 2.2. Write a program that provides the direction vector of a ball seen by the camera (in the camera reference frame). 
+
+1- Fork and clone the following repository: https://github.com/esdalar/ros_img_processor.git
+
+```sh
+$ roslaunch ros_img_processor ros_img_processor.launch
+```
+
+
