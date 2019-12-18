@@ -4,19 +4,16 @@
 
 1- Install the following packages to be able to calibrate the camera:
 
-```
+```sh
 $ sudo apt-get install ros-melodic-camera-calibration
 $ sudo apt-get install ros-melodic-usb-cam
-
 ```
 
 2- Change the square dimension in the line *"	args="--size 8x6 --square 0.1673 image:=/usb_cam/image_raw camera:=usb_cam">"* of the file "usb_camera_calibration.launch" of the "launch" repository:
 
 
-```
+```sh
  ~/catkin_ws/src/usb_cam_calibration/launch$ gedit usb_camera_calibration.launch
-
-
 ```
 
  
@@ -65,19 +62,15 @@ $ sudo apt-get install ros-melodic-usb-cam
 
 3- Execute the calibration program:
 
-```
+```sh
 ~/catkin_ws/src$ roslaunch usb_cam_calibration usb_camera_calibration.launch video_device:="/dev/video0"
-
-
 ```
 
 4- Compare the rectified image with real one:
 
 
-```
+```sh
 $ roslaunch usb_cam_calibration usb_camera_calibrated.launch video_device:="/dev/video0"
-
-
 ```
 
 ## Exercise 2.2. Write a program that provides the direction vector of a ball seen by the camera (in the camera reference frame). 
