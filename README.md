@@ -82,6 +82,7 @@ $ roslaunch usb_cam_calibration usb_camera_calibrated.launch video_device:="/dev
 1- Fork and clone the following repository: https://github.com/esdalar/ros_img_processor.git
 2- Change the requiered values of our camera in the file "*launch/usb_camera.launch*". In this case, we should change only the value of the used camera "*device0*":
 
+```sh
 <launch>
 	<!-- Launch usb camera-->
 	<!-- See parameter definition at http://wiki.ros.org/usb_cam -->
@@ -106,6 +107,7 @@ $ roslaunch usb_cam_calibration usb_camera_calibrated.launch video_device:="/dev
     </node>
 
 </launch>
+```
 
 3- After changing this value run the program:
 
