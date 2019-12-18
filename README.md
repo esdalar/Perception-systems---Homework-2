@@ -68,9 +68,7 @@ $ sudo apt-get install ros-melodic-usb-cam
 ~/catkin_ws/src$ roslaunch usb_cam_calibration usb_camera_calibration.launch video_device:="/dev/video0"
 ```
 
-.. image:: ../Perception-systems---Homework-2/master/Calibration_program.png
-  :alt:
-  :align: center
+[[https://raw.githubusercontent.com/esdalar/Perception-systems---Homework-2/master/Calibration_program.png]]
 
 4- Compare the rectified image with real one:
 
