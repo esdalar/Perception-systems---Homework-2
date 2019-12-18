@@ -18,7 +18,7 @@ $ sudo apt-get install ros-melodic-usb-cam
  ~/catkin_ws/src/usb_cam_calibration/launch$ gedit usb_camera_calibration.launch
 ```
 
- 
+```sh 
  <launch>
 	<!-- User arguments -->
 	<arg name="video_device"  default="/dev/video0" />
@@ -61,6 +61,7 @@ $ sudo apt-get install ros-melodic-usb-cam
 	</group>
 
 </launch>
+```
 
 3- Execute the calibration program:
 
