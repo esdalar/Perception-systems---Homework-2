@@ -78,6 +78,34 @@ $ roslaunch usb_cam_calibration usb_camera_calibrated.launch video_device:="/dev
 ## Exercise 2.2. Write a program that provides the direction vector of a ball seen by the camera (in the camera reference frame). 
 
 1- Fork and clone the following repository: https://github.com/esdalar/ros_img_processor.git
+2- Change the requiered values of our camera in the file "*launch/usb_camera.launch*". In this case, we should change only the value of the used camera "*device0*":
+
+<launch>
+	<!-- Launch usb camera-->
+	<!-- See parameter definition at http://wiki.ros.org/usb_cam -->
+    <node name="usb_cam" pkg="usb_cam" type="usb_cam_node" output="screen" >
+        <param name="video_device" value="/dev/video0" />
+        <param name="image_width" value="640" />
+        <param name="image_height" value="480" />
+        <param name="pixel_format" value="yuyv" />
+        <param name="camera_frame_id" value="usb_cam" />
+        <param name="io_method" value="mmap"/>
+    </node>
+
+	<!-- image viewer -->
+    <node
+        name="image_view_in"
+        pkg="image_view"
+        type="image_view"
+        respawn="false"
+        output="screen">
+        <remap from="image" to="/usb_cam/image_raw"/>
+        <param name="autosize" value="false" />
+    </node>
+
+</launch>
+
+3- After changing this value run the program:
 
 ```sh
 $ roslaunch ros_img_processor ros_img_processor.launch
