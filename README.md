@@ -1,6 +1,6 @@
-### Perception-systems---Homework-2
+## Perception-systems---Homework-2
 
-## Exercise 2.1.Calibrate the intrinsics parameters of your webcam.
+### Exercise 2.1.Calibrate the intrinsics parameters of your webcam.
 
 First of all, fork and clone the following repository:https://github.com/beta-robots/usb_cam_calibration
 
@@ -75,7 +75,7 @@ $ sudo apt-get install ros-melodic-usb-cam
 $ roslaunch usb_cam_calibration usb_camera_calibrated.launch video_device:="/dev/video0"
 ```
 
-## Exercise 2.2. Write a program that provides the direction vector of a ball seen by the camera (in the camera reference frame). 
+### Exercise 2.2. Write a program that provides the direction vector of a ball seen by the camera (in the camera reference frame). 
 
 1- Fork and clone the following repository: https://github.com/esdalar/ros_img_processor.git
 2- Change the requiered values of our camera in the file "*launch/usb_camera.launch*". In this case, we should change only the value of the used camera "*device0*":
